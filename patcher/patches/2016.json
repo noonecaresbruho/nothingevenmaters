@@ -1,0 +1,46 @@
+{
+  "version": "2016",
+  "description": "2016 Late Roblox client patches",
+  "binaryPatches": [
+    {
+      "name": "watrbx.wtf to localhost:3001",
+      "find": "68 74 74 70 3A 2F 2F 77 77 77 2E 77 61 74 72 62 78 2E 77 74 66",
+      "replace": "68 74 74 70 3A 2F 2F 6C 6F 63 61 6C 68 6F 73 74 3A 33 30 30 31",
+      "occurrences": "all"
+    },
+    {
+      "name": "watrbx.wtf/ to localhost:3001/",
+      "find": "68 74 74 70 3A 2F 2F 77 77 77 2E 77 61 74 72 62 78 2E 77 74 66 2F",
+      "replace": "68 74 74 70 3A 2F 2F 6C 6F 63 61 6C 68 6F 73 74 3A 33 30 30 31 2F",
+      "occurrences": "all"
+    },
+    {
+      "name": "HTTPS roblox.com to HTTP localhost (stock 2016)",
+      "find": "68 74 74 70 73 3A 2F 2F 77 77 77 2E 72 6F 62 6C 6F 78 2E 63 6F 6D",
+      "replace": "68 74 74 70 3A 2F 2F 6C 6F 63 61 6C 68 6F 73 74 00 00 00 00 00 00",
+      "occurrences": "all"
+    },
+    {
+      "name": "TrustCheck bypass",
+      "findString": "Non-trusted BaseURL used",
+      "patchType": "nearJump",
+      "description": "Unsupported in this build; patcher will skip nearJump."
+    }
+  ],
+  "hostsEntries": [
+    "127.0.0.1  www.roblox.com",
+    "127.0.0.1  api.roblox.com",
+    "127.0.0.1  assetdelivery.roblox.com",
+    "127.0.0.1  clientsettings.api.roblox.com",
+    "127.0.0.1  watrbx.wtf",
+    "127.0.0.1  www.watrbx.wtf",
+    "127.0.0.1  api.watrbx.wtf",
+    "127.0.0.1  watrbx.xyz",
+    "127.0.0.1  www.watrbx.xyz",
+    "127.0.0.1  api.watrbx.xyz",
+    "127.0.0.1  logging.service.watrbx.wtf",
+    "127.0.0.1  test.public.ecs.watrbx.wtf",
+    "127.0.0.1  assetgame.watrbx.wtf"
+  ]
+}
+

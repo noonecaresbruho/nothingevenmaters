@@ -1,0 +1,11 @@
+{
+  "Mode": "GameServer",
+  "GameId": 1,
+  "PlaceId": 1,
+  "PlaceFetchUrl": "http://localhost:3001/game/load-place.ashx?placeId=1",
+  "BaseUrl": "http://localhost:3001/",
+  "GameServerIp": "localhost",
+  "GameServerPort": 53640,
+  "MachineAddress": "127.0.0.1",
+  "ApiKey": ""
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roblox-revival-patcher",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "roblox-revival-patcher": "./patch.js"
+  },
+  "scripts": {
+    "patch": "node patch.js"
+  }
+}
